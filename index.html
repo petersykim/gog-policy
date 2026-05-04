@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gog — Personal Google Briefing CLI</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 4em auto; padding: 0 1.5em; color: #222; line-height: 1.6; }
+  h1 { font-size: 2em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2em; margin-top: 2em; }
+  .lede { color: #555; font-size: 1.1em; }
+  code { background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 3px; font-size: 0.9em; }
+  a { color: #0366d6; }
+  footer { margin-top: 3em; color: #888; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 1em; }
+</style>
+</head>
+<body>
+<h1>gog</h1>
+<p class="lede">Personal Google briefing CLI for Peter Kim.</p>
+
+<p>gog is a private command-line tool that generates a daily briefing for Peter Kim by reading Gmail and Google Calendar data directly from his own Google account.</p>
+
+<h2>What it does</h2>
+<p>Each morning, gog queries Gmail for relevant email activity and reads Google Calendar for the day's schedule. It synthesizes this into a private daily briefing — summarizing priorities, flagging important messages, and surfacing calendar context. Nothing is sent anywhere. It runs locally and exits.</p>
+
+<h2>Who uses it</h2>
+<p>One person: Peter Kim. gog is not a product, not distributed, not available for download. It exists solely to help one person stay on top of his day.</p>
+
+<h2>Scopes used</h2>
+<ul>
+  <li><code>gmail.readonly</code> — reads email to extract briefing content</li>
+  <li><code>https://www.googleapis.com/auth/calendar</code> — reads and writes calendar for briefing context</li>
+</ul>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>
+<p>Contact: <a href="mailto:peter.sy.kim@gmail.com">peter.sy.kim@gmail.com</a></p>
+</footer>
+</body>
+</html>
